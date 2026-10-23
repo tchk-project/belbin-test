@@ -45,7 +45,7 @@ SHA-256 исходников записаны в `src/data.json`. Извлече
 
 ### GitHub Pages
 
-Pages настроен на публикацию из ветки `main`, папки `/ (root)`. Файл `index.html` в корне — автономная сборка теста. `npm run build` обновляет одновременно корневой `index.html` и `dist/index.html`; коммитьте оба файла. Workflow `.github/workflows/pages.yml` проверяет расчёт и соответствие сборки исходникам. Публикацию выполняет стандартный workflow GitHub Pages. Адрес: `https://hleserg.github.io/belbin-test/`.
+Pages настроен на публикацию из ветки `main`, папки `/ (root)`. Файл `index.html` в корне — автономная сборка теста. `npm run build` обновляет одновременно корневой `index.html` и `dist/index.html`; коммитьте оба файла. Workflow `.github/workflows/pages.yml` проверяет расчёт и соответствие сборки исходникам. Публикацию выполняет стандартный workflow GitHub Pages. Адрес: `https://tchk-project.github.io/belbin-test/`.
 
 ### Российский хостинг
 

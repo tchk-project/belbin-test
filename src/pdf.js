@@ -1,5 +1,5 @@
 // Offline PDF writer: embedded TrueType, selectable Unicode text, A4 pages.
-export const SITE_URL='https://hleserg.github.io/belbin-test/';
+export const SITE_URL='https://tchk-project.github.io/belbin-test/';
 export function createReportPdf(pages,font){
  const enc=new TextEncoder(),objects=[null],used=new Map();
  const add=value=>(objects.push(value),objects.length-1);
