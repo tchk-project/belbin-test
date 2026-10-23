@@ -8,7 +8,7 @@ const app=fs.readFileSync('src/app.js','utf8');
 const report=app.slice(app.indexOf('function reportText(){'),app.indexOf('function downloadText(){'));
 test('Shared text orders both extremes and places only filled comments below their role',()=>{
  const comments=['Да, это про меня.','','   ','','Хочу развивать эту роль.','','',''];
- const text=vm.runInNewContext(report+';reportText()',{data,state:{answers:data.fixture.answers,comments},score,extremes,SITE_URL:'https://hleserg.github.io/belbin-test/'});
+ const text=vm.runInNewContext(report+';reportText()',{data,state:{answers:data.fixture.answers,comments},score,extremes,SITE_URL:'https://tchk-project.github.io/belbin-test/'});
  const high=text.split('Наибольшие баллы')[1].split('Наименьшие баллы')[0];
  assert.ok(high.indexOf('Дипломат: 18')<high.indexOf('Доводчик: 14'));
  assert.ok(high.indexOf('Доводчик: 14')<high.indexOf('Исполнитель: 11'));
